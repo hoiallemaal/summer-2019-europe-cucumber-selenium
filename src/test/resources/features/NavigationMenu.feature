@@ -6,14 +6,14 @@ Feature: Navigation menu
     And the users enter the sales manager information
     When the user navigates to Fleet, Vehicles
     Then the url should be expected Fleet url
-
+@smoke
   Scenario: Sales manager-Marketing-->Campaigns
     Given the user is on the login page
     And the users enter the sales manager information
     When the users navigates Marketing Campaigns
     Then the url should be expected Campaigns url
 
-
+@smoke
   Scenario: Activities--> Calender Events
     Given the user is on the login page
     And the users enter the salesmanager information
